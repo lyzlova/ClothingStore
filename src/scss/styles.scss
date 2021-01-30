@@ -1,0 +1,16 @@
+@import "../../node_modules/swiper/swiper-bundle.css";
+@import "./utils/placeholder";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./base/vissualy-hidden";
+@import "./base/container";
+
+@import "./base/main";
+@import "./Components/header.scss";
+@import "./Components/burger.scss";
+@import "./Components/animation.scss";
+@import "./Components/banner.scss";
+@import "./Components/featured.scss";
+@import "./Components/purched.scss";
+@import "./Components/products.scss";
+@import "./Components/swiper.scss";

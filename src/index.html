@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Clothing Store</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header id="home" class="header">
+      <div class="container header__container">
+        <nav data-menu class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link border-animation" href="./cart.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link border-animation" href="#">Shop</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link border-animation nav__link--current" href="#"
+                >Elements</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link border-animation" href="#">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link border-animation" href="#">Page</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="logo header__logo" href="">
+          Clothing <br />
+          Store</a
+        >
+        <button
+          class="burger"
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+        >
+          <svg class="burger__icon-burger" width="40" height="40">
+            <use href="./images/icon/symbol-defs.svg#icon-menu"></use>
+          </svg>
+          <svg class="burger__icon-cross" width="40" height="40">
+            <use href="./images/icon/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <ul class="shop-nav header__shop-nav">
+          <li class="shop-nav__item">
+            <form action="#" class="shop-nav__search-form search-form">
+              <!-- <button
+                class="search-form__btn btn-reset"
+                aria-label="Find"
+              ></button> -->
+              <svg class="burger__icon-burger" width="16" height="16">
+                <use href="./images/icon/symbol-defs.svg#icon-icon"></use>
+              </svg>
+            </form>
+          </li>
+          <li class="shop-nav__item">
+            <a href="#" class="shop-nav__link" aria-label="Go to cabinet">
+              <svg class="burger__icon-burger" width="16" height="16">
+                <use href="./images/icon/symbol-defs.svg#icon-avatar"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="shop-nav__item cart">
+            <a href="#" class="shop-nav__link" aria-label="Go to cart">
+              <svg class="burger__icon-burger" width="16" height="16">
+                <use href="./images/icon/symbol-defs.svg#icon-bag"></use>
+              </svg>
+            </a>
+            <span class="cart__quantity quantity">3</span>
+          </li>
+          <!-- <div class="cart">
+            <h2 class="cart__title">Cart</h2>
+            <ul class="cart__list"></ul>
+          </div> -->
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="banner">
+        <div class="container banner__container">
+          <h1 class="vissualy-hidden">Clothing Store</h1>
+          <div class="banner-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="banner__content">
+                  <div>
+                    <h2 class="banner__title">
+                      FASHION THAT LIKES <br />
+                      TO SAY YES
+                    </h2>
+                    <p class="banner__text">
+                      Curabitur arcu erat, accumsan id imperdiet et, porttitor
+                      at sem. Vestibulum ac diam sit amet quam vehicula
+                      elementum sed sit amet dui. Vivamus suscipit tortor eget
+                      felis porttitor volutpat.
+                    </p>
+                  </div>
+                  <img
+                    src="./images/bcg-images/hero.jpg"
+                    class="banner__image"
+                    alt="Girl"
+                    aria-hidden="true"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="banner__content">
+                  <div>
+                    <h2 class="banner__title">
+                      FASHION THAT LIKES <br />
+                      TO SAY YES
+                    </h2>
+                    <p class="banner__text">
+                      Curabitur arcu erat, accumsan id imperdiet et, porttitor
+                      at sem. Vestibulum ac diam sit amet quam vehicula
+                      elementum sed sit amet dui. Vivamus suscipit tortor eget
+                      felis porttitor volutpat.
+                    </p>
+                  </div>
+                  <img
+                    src="./images/bcg-images/hero.jpg"
+                    class="banner__image"
+                    alt="Girl"
+                    aria-hidden="true"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="banner__content">
+                  <div>
+                    <h2 class="banner__title">
+                      FASHION THAT LIKES <br />
+                      TO SAY YES
+                    </h2>
+                    <p class="banner__text">
+                      Curabitur arcu erat, accumsan id imperdiet et, porttitor
+                      at sem. Vestibulum ac diam sit amet quam vehicula
+                      elementum sed sit amet dui. Vivamus suscipit tortor eget
+                      felis porttitor volutpat.
+                    </p>
+                  </div>
+                  <img
+                    src="./images/bcg-images/hero.jpg"
+                    class="banner__image"
+                    alt="Girl"
+                    aria-hidden="true"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination banner-pag"></div>
+        </div>
+        <div class="purched">
+          <div class="purched__image">
+            <img src="./images/product/4.jpg" alt="product 1" />
+          </div>
+          <div class="purched__text">
+            <span class="purched__descr">Someone purchaed a</span>
+            <h3 class="purched__title">Faux shearling double-breasted coat</h3>
+            <span class="purched__when-from"
+              >15 minutes ago London, Great Britain</span
+            >
+          </div>
+          <button class="btn-reset purched__close"></button>
+        </div>
+      </section>
+      <section class="featured">
+        <h2 class="vissualy-hidden">featured</h2>
+        <div class="container featured__container">
+          <ul class="featured__list">
+            <li class="featured__item">
+              <div class="featured__article featured-article">
+                <img
+                  class="featured-article__img"
+                  src="./images/product/1.jpg"
+                  alt=""
+                />
+                <div class="featured-article__text">
+                  <h3 class="featured-article__title">Women's Mid-Season</h3>
+                  <a href="" class="featured-article__link">Shop Now</a>
+                </div>
+              </div>
+            </li>
+            <li class="featured__item">
+              <div class="featured__article featured-article">
+                <img
+                  class="featured-article__img"
+                  src="./images/product/2.jpg"
+                  alt=""
+                />
+                <div class="featured-article__text">
+                  <h3 class="featured-article__title">Summer Romance</h3>
+                  <a href="" class="featured-article__link">Shop Now</a>
+                </div>
+              </div>
+            </li>
+            <li class="featured__item">
+              <div class="featured__article featured-article">
+                <img
+                  class="featured-article__img"
+                  src="./images/product/3.jpg"
+                  alt=""
+                />
+                <div class="featured-article__text">
+                  <h3 class="featured-article__title">
+                    20% Off All Accessories
+                  </h3>
+                  <a href="" class="featured-article__link">Shop Now</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="products">
+        <h2 class="vissualy-hidden">products</h2>
+        <div class="container products__container nav-products">
+          <ul class="products__nav nav-products__list">
+            <li class="nav-products__item"><button class="nav-products__btn">Best Sellers</button></li>
+            <li class="nav-products__item"><button class="nav-products__btn">New Products</button></li>
+            <li class="nav-products__item"><button class="nav-products__btn">Sale Products</button></li>
+          </ul>
+          <ul class="products__list"></ul>
+          <div class="products__btn-center">
+            <button class="products__more">
+              <span>Load More</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+.banner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+  height: 700px;
+  min-height: 700px;
+  background-color: $header-bcg-color;
+  &__content {
+    @include flex(flex, column, nowrap, center, center);
+    @media screen and (min-width: 768px) {
+      @include flex(flex, row, nowrap, center, space-evenly);
+    }
+    & > div {
+      margin-bottom: 40px;
+      @media screen and (min-width: 768px) {
+        @include flex(flex, column, nowrap, flex-start, space-between);
+        margin-bottom: 40px;
+        margin-right: 40px;
+        max-width: 40%;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    @media screen and (min-width: 768px) {
+      width: 30%;
+    }
+  }
+}

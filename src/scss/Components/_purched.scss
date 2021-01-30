@@ -1,0 +1,71 @@
+.purched {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    z-index: 10;
+    display: flex;
+    padding: 10px;
+    width: 280px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    // background-color: var(--color-white);
+    transform: translateX(-150vw);
+    transition: transform 0.3s;
+  
+    &__text {
+      margin-left: 10px;
+    }
+  
+    &__image {
+      flex-shrink: 0;
+  
+    //   img {
+    //     // width: 100%;
+    //     // height: 100%;
+    //     // object-fit: cover;
+    //   }
+    }
+  
+    &__descr {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 11px;
+    //   color: var(--color-gray);
+    }
+  
+    &__title {
+      margin: 0;
+      margin-bottom: 7px;
+      padding-right: 20px;
+      min-height: 34px;
+      font-size: 15px;
+    }
+  
+    &__when-from {
+      display: block;
+      padding-right: 40px;
+      font-size: 11px;
+    //   color: var(--color-gray);
+    }
+  
+    &__close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      padding: 0;
+      width: 10px;
+      height: 10px;
+    //   background-image: url("../img/close.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no    // @include xs {
+    //   left: 15px;
+    // }-repeat;
+    }
+  
+    &--visible {
+      transform: translateX(0);
+      transition: transform 0.3s;
+    }
+  
+
+  }
