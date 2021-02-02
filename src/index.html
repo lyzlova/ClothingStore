@@ -25,7 +25,7 @@
               <a class="nav__link border-animation" href="#">Home</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link border-animation" href="/cart.html">Shop</a>
+              <a class="nav__link border-animation" href="#">Shop</a>
             </li>
             <li class="nav__item">
               <a class="nav__link border-animation nav__link--current" href="#"
@@ -81,7 +81,7 @@
               </svg>
             </a>
           </li>
-          <li class="shop-nav__item cart">
+          <li id="cart" class="shop-nav__item">
             <a href="#" class="shop-nav__link">
               <svg class="shop-nav__icon icon-bag" width="16" height="16">
                 <use href="./images/icon/symbol-defs.svg#icon-bag"></use>
@@ -119,7 +119,10 @@
                 value=""
               />
 
-              <button type="submit" class="form-nav__btn form-signin--btn">
+              <button
+                type="submit"
+                class="form-nav__btn form-signin--btn btn btn--active custom-btn"
+              >
                 Enter
               </button>
             </div>
@@ -147,16 +150,22 @@
                 value=""
               />
 
-              <button type="submit" class="form-nav__btn form-login--btn">
+              <button
+                type="submit"
+                class="form-nav__btn form-login--btn btn btn--active custom-btn"
+              >
                 Enter
               </button>
             </div>
           </form>
         </div>
-        <!-- <div class="cart">
-            <h2 class="cart__title">Cart</h2>
-            <ul class="cart__list"></ul>
-          </div> -->
+        <div class="cart">
+          <svg class="cross" width="20" height="20">
+            <use href="./images/icon/symbol-defs.svg#icon-cross"></use>
+          </svg>
+          <h2 class="cart__title">Cart</h2>
+          <ul class="cart__list"></ul>
+        </div>
       </div>
     </header>
     <main>
@@ -287,7 +296,9 @@
             Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
             dui. Vivamus suscipit tortor eget felis porttitor volutpat.
           </p>
-          <button class="collection__btn btn btn--active">All colection</button>
+          <button class="collection__btn btn btn--active custom-btn">
+            All colection
+          </button>
           <ul class="collection__list"></ul>
         </div>
       </section>
@@ -608,10 +619,18 @@
                     </div>
                     <div class="custom-select__dropdown">
                       <ul class="custom-select__list">
-                        <li class="custom-select__item custom-select__item-latest" data-dropdown="latest">
-                          <span class="custom-select__text">Sort by latest</span>
+                        <li
+                          class="custom-select__item custom-select__item-latest"
+                          data-dropdown="latest"
+                        >
+                          <span class="custom-select__text"
+                            >Sort by latest</span
+                          >
                         </li>
-                        <li class="custom-select__item custom-select__item-price" data-dropdown="price">
+                        <li
+                          class="custom-select__item custom-select__item-price"
+                          data-dropdown="price"
+                        >
                           <span class="custom-select__text">Sort by price</span>
                         </li>
                       </ul>
@@ -619,7 +638,7 @@
                   </div>
                 </div>
                 <div class="catalog-props__choice catalog-choice">
-                  <button class="catalog-choice__clear">Clear all</button>
+                  <button class="catalog-choice__clear btn btn--active custom-btn">Clear all</button>
                 </div>
               </div>
               <ul class="catalog-grid__content" data-grid-columns="4"></ul>
@@ -660,7 +679,9 @@
             </li>
           </ul>
           <ul class="products__list"></ul>
-          <button class="nav-products__more btn btn--active">Load More</button>
+          <button class="nav-products__more btn btn--active custom-btn">
+            Load More
+          </button>
         </div>
       </section>
       <section class="shop-banners">
@@ -698,7 +719,9 @@
               Accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit
               amet quam vehisuscipit tortor eget felis.
             </p>
-            <button class="info__btn btn btn--active">Contact Us</button>
+            <button class="info__btn btn btn--active custom-btn">
+              Contact Us
+            </button>
           </div>
         </div>
         <div id="map"></div>
@@ -706,7 +729,7 @@
           <form class="form-contact" action="#" id="form">
             <div class="form-contact__content">
               <button class="form-contact__btn" type="button" data-menu-button>
-                <svg class="registration__btn-cross" width="20" height="20">
+                <svg class="form-contact__btn-cross" width="20" height="20">
                   <use href="./images/icon/symbol-defs.svg#icon-cross"></use>
                 </svg>
               </button>
@@ -735,7 +758,10 @@
                   placeholder="Enter your mail"
                 />
               </div>
-              <button class="form-contact__submit btn" type="submit">
+              <button
+                class="form-contact__submit btn btn--active custom-btn"
+                type="submit"
+              >
                 Submit
               </button>
             </div>
@@ -793,7 +819,10 @@
                   <label class="subscribe-form__field">
                     <input type="email" required placeholder="Email Address" />
                   </label>
-                  <button class="subscribe-form__btn" type="submit">
+                  <button
+                    class="subscribe-form__btn btn--active btn custom-btn"
+                    type="submit"
+                  >
                     Subscribe
                   </button>
                 </form>
@@ -819,7 +848,7 @@
                       target="_blank"
                       class="social__link"
                     >
-                      <svg class="burger__icon-burger" width="16" height="16">
+                      <svg class="social__icon" width="16" height="16">
                         <use
                           href="./images/icon/symbol-defs.svg#icon-twitter"
                         ></use>
@@ -832,7 +861,7 @@
                       target="_blank"
                       class="social__link"
                     >
-                      <svg class="burger__icon-burger" width="16" height="16">
+                      <svg class="social__icon" width="16" height="16">
                         <use
                           href="./images/icon/symbol-defs.svg#icon-facebook"
                         ></use>
@@ -845,7 +874,7 @@
                       target="_blank"
                       class="social__link"
                     >
-                      <svg class="burger__icon-burger" width="16" height="16">
+                      <svg class="social__icon" width="16" height="16">
                         <use
                           href="./images/icon/symbol-defs.svg#icon-instagram"
                         ></use>
@@ -858,7 +887,7 @@
                       target="_blank"
                       class="social__link"
                     >
-                      <svg class="burger__icon-burger" width="16" height="16">
+                      <svg class="social__icon" width="16" height="16">
                         <use
                           href="./images/icon/symbol-defs.svg#icon-pinterest"
                         ></use>

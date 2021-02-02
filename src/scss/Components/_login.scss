@@ -18,7 +18,7 @@
     background-color: transparent;
     margin-left: auto;
     svg {
-      fill: $main-text-color;
+      fill: $second-text-color;
     }
     &:hover {
       transform: scale(5px);
@@ -62,10 +62,6 @@
 
   &__btn {
     padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    background-color: $second-text-color;
-    @include font(12px, $main-text-color, 400, 1, left, 1px, uppercase);
   }
 
   input::placeholder {

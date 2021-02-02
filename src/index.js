@@ -10,6 +10,7 @@ import "./js/contact-us.js";
 import "./js/sortProducts.js";
 import "./js/catalogColumns.js";
 import "./js/sortProductsByPrice.js";
+import "./js/cart.js";
 
 const buttonMenu = document.querySelector("[data-menu-button]");
 const burgerMenu = document.querySelector("[data-menu]");

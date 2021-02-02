@@ -1,21 +1,28 @@
 .cart {
+  @include flex(flex, column, false, center, space-evenly);
   display: none;
   position: fixed;
-  width: 80%;
+  width: 70%;
   padding: 40px 30px;
   top: 60px;
   right: 50%;
   transform: translate(50%, 0);
-  background-color: $header-line-through;
-  z-index: 2;
+  background-color: $link-color;
+  z-index: 19;
+
+  .cross {
+    margin-left: auto;
+    fill: $second-text-color;
+  }
 
   &__title {
     margin-bottom: 30px;
+    @include font(20px, $second-text-color, 400, 2.5, center, 2px, uppercase);
   }
 
   &__item {
     @include flex(flex, row, false, center, space-evenly);
-    border: 1px solid $tab-text-color;
+    border: 1px solid $header-bcg-color;
     padding: 30px;
   }
 
@@ -29,7 +36,7 @@
 
   th {
     padding: 10px;
-    @include font(20px, $main-text-color, 400, 2.5, center, 2px, uppercase);
+    @include font(20px, $second-text-color, 400, 2.5, center, 2px, uppercase);
   }
 
   tr:not(:last-child) {
@@ -38,7 +45,7 @@
 
   td {
     padding: 10px;
-    @include font(16px, $main-text-color, 400, 2.5, center, 2px, uppercase);
+    @include font(16px, $second-text-color, 400, 2.5, center, 2px, uppercase);
   }
 
   .del__item {

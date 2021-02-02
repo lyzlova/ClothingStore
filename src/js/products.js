@@ -13,21 +13,21 @@ function createTableRows(data, tab) {
   productsList.innerHTML = "";
   for (let i = 0; i < count; i++) {
     productsList.innerHTML += `
-        <li class="products__item">
+        <li class="products__item elem">
           <article class="product">
             <div class="product__image">
               <img src="${selectArticle[i].image}" alt="${selectArticle[i].title}">
             </div>
             <div class="product__content">
             <h3 class="product__title">
-              <a href="#">
+              <a class="product__link" href="#">
                 ${selectArticle[i].title}
               </a>
             </h3>
             <span class="product__rate">${selectArticle[i].rate}</span>
             <div class="product__footer">
               <span class="product__price">${selectArticle[i].price}</span>
-              <button class="product__add" data-id="wsd2">Shop</button>
+              <button class="product__add add btn--active" data-id="${selectArticle[i].data}">Shop</button>
             </div>
             </div>
           </article>

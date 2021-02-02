@@ -7,6 +7,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "blue",
     size: "s",
+    data: "1"
   },
   {
     title: "Blue Raincoat Shoes",
@@ -15,6 +16,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "grey",
     size: "m",
+    data: "5"
   },
   {
     title: "Tailored indigo jumpsuit ",
@@ -23,6 +25,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "black",
     size: "xs",
+    data: "6"
   },
   {
     title: "Triple stone drop earrings",
@@ -31,6 +34,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "white",
     size: "l",
+    data: "4"
   },
   {
     title: "Backpack with contrast",
@@ -39,6 +43,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "blue",
     size: "xl",
+    data: "3"
   },
   {
     title: "Eye Mesh Boat Shoes",
@@ -47,6 +52,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "grey",
     size: "4xl",
+    data: "1"
   },
   {
     title: "Azure Tote Shoes Boat",
@@ -55,6 +61,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "black",
     size: "3xl",
+    data: "2"
   },
   {
     title: "Backpack with contrast",
@@ -63,6 +70,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "grey",
     size: "2xl",
+    data: "3"
   },
   {
     title: "Shirt in organic cotton ",
@@ -71,6 +79,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "yellow",
     size: "M",
+    data: "7"
   },
   {
     title: "Tailored indigo jumpsuit ",
@@ -79,6 +88,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "blue",
     size: "s",
+    data: "6"
   },
   {
     title: "Eye Mesh Boat Shoes",
@@ -87,6 +97,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "black",
     size: "2xl",
+    data: "1"
   },
   {
     title: "Azure Tote Shoes Boat",
@@ -95,6 +106,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "white",
     size: "3xl",
+    data: "2"
   },
   {
     title: "Blue Raincoat Shoes",
@@ -103,6 +115,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "yellow",
     size: "xs",
+    data: "5"
   },
   {
     title: "Triple stone drop earrings",
@@ -111,6 +124,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "blue",
     size: "s",
+    data: "4"
   },
   {
     title: "Backpack with contrast",
@@ -119,6 +133,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "black",
     size: "l",
+    data: "3"
   },
   {
     title: "Eye Mesh Boat Shoes",
@@ -127,6 +142,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "white",
     size: "4xl",
+    data: "1"
   },
   {
     title: "Azure Tote Shoes Boat",
@@ -135,6 +151,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "yellow",
     size: "xs",
+    data: "2"
   },
   {
     title: "Blue Raincoat Shoes",
@@ -142,7 +159,8 @@ export default [
     rate: "new",
     image: "../images/product/img1.jpg",
     color: "yellow",
-    size: "xs",
+    size: "5xs",
+    data: "5"
   },
   {
     title: "Triple stone drop earrings",
@@ -151,6 +169,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "blue",
     size: "s",
+    data: "4"
   },
   {
     title: "Backpack with contrast",
@@ -159,6 +178,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "black",
     size: "l",
+    data: "3"
   },
   {
     title: "Eye Mesh Boat Shoes",
@@ -167,6 +187,7 @@ export default [
     image: "../images/product/img1.jpg",
     color: "white",
     size: "4xl",
+    data: "1"
   },
   {
     title: "Azure Tote Shoes Boat",
@@ -175,5 +196,6 @@ export default [
     image: "../images/product/img1.jpg",
     color: "yellow",
     size: "xs",
+    data: "2"
   },
 ];

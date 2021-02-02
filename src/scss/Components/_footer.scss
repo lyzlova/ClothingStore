@@ -69,7 +69,7 @@
 
   &__bottom {
     @include flex(flex, row, nowrap, center, space-between);
-   .footer__list {
+    .footer__list {
       @include flex(flex, row, nowrap, center, center);
     }
   }
@@ -87,14 +87,6 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    padding: 13px 10px;
-    border: none;
-    background-color: inherit;
-    cursor: pointer;
-    &:hover {
-      transform: translateY(5px);
-      transition: transform 0.3s;
-    }
   }
 
   &__field {
@@ -119,5 +111,9 @@
     &:not(:last-child) {
       margin-right: 29px;
     }
+  }
+
+  &__icon:hover {
+    fill: $btn-bcg-color;
   }
 }

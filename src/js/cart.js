@@ -1,12 +1,15 @@
-const itemBox = document.querySelectorAll(".products__item");
 const cartCont = document.getElementById("cart");
 const cart = document.querySelector(".cart");
-const amount = document.querySelector(".info-header__amount");
-let cartData = getCartData() || {};
-amount.textContent = Object.keys(cartData).length;
+const amount = document.querySelector(".quantity");
+const btnList = document.querySelectorAll(".add");
+const cartList = document.querySelector(".cart__list");
+const crossBtn = document.querySelector(".cross");
 
 cartCont.addEventListener("click", openCart);
 cart.addEventListener("click", deleteCart);
+
+let cartData = getCartData() || {};
+amount.textContent = Object.keys(cartData).length;
 
 function getCartData() {
   return JSON.parse(localStorage.getItem("cart"));
@@ -21,8 +24,10 @@ function addToCart(e) {
   this.disabled = true;
   const parentBox = this.parentNode.parentNode;
   const itemId = this.getAttribute("data-id");
-  const itemTitle = parentBox.querySelector(".card__title").innerHTML;
-  const itemPrice = parentBox.querySelector(".card__price").innerHTML;
+
+  const itemTitle = parentBox.querySelector(".product__link").innerHTML;
+  const itemPrice = parentBox.querySelector(".product__price").innerHTML;
+
   if (cartData.hasOwnProperty(itemId)) {
     cartData[itemId][2] += 1;
   } else {
@@ -35,9 +40,8 @@ function addToCart(e) {
   return false;
 }
 
-itemBox.forEach((item) => {
-  const btn = item.querySelector(".card__add");
-  btn.addEventListener("click", addToCart);
+btnList.forEach((item) => {
+  item.addEventListener("click", addToCart);
 });
 
 function parseNumber(n) {
@@ -72,7 +76,7 @@ function openCart(e) {
       totalCount +
       "</span></td><td></td></tr>";
     totalItems += "<table>";
-    cart.innerHTML = totalItems;
+    cartList.innerHTML = totalItems;
     amount.textContent = Object.keys(cartData).length;
   }
   return false;
@@ -105,3 +109,7 @@ function deleteCart(e) {
     }
   }
 }
+
+crossBtn.addEventListener("click", (e) => {
+  cart.classList.toggle("is-open");
+});

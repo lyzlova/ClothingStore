@@ -39,20 +39,7 @@ module.exports = env => ({
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: "index.html",
-      template: "./index.html",
-      minify: {
-        collapseWhitespace: true,
-        removeComments: true,
-        removeRedundantAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
-        useShortDoctype: true,
-      },
-    }),
-    new HtmlWebpackPlugin({
-      filename: "cart.html",
-      template: "../src/html/cart.html",
+      template: './index.html',
       minify: {
         collapseWhitespace: true,
         removeComments: true,

@@ -66,16 +66,19 @@ textarea:active {
 
 .btn {
   display: block;
-  background-color: inherit;
   border: none;
-  font-size: 20px;
   cursor: pointer;
+  padding: 16px;
+  background-color: inherit;
+  @include font(11px, $main-text-color, 700, 1, center, 1px, uppercase);
 }
 
-.btn--active {
-  background-color: $second-text-color;
-  cursor: pointer;
-  border: 2px solid $second-text-color;
-  padding: 16px;
-  @include font(11px, $main-text-color, 700, 1, center, 1px, uppercase);
+.btn--active:hover {
+  transition: background-color 0.3s;
+  opacity: 0.5;
+}
+
+.custom-btn {
+  background-color: $btn-bcg-color;
+  border: 2px solid $btn-bcg-color;
 }
