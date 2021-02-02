@@ -1,5 +1,5 @@
 .header {
-  background-color: $header-bcg-color;
+  background-color: $featured-article-bcg-color;
   &__container {
     @include flex(flex, row, nowrap, center, space-between);
     padding: 20px 15px;

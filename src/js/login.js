@@ -2,7 +2,7 @@ const registration = document.querySelector(".registration");
 const crossBtn = document.querySelector(".registration__btn");
 const signinBtn = document.querySelector(".form-signin--btn");
 const loginBtn = document.querySelector(".form-login--btn");
-const linkHeaderLogin = document.querySelector(".info-header__link--login");
+const linkHeaderLogin = document.querySelector("[data-user]");
 
 linkHeaderLogin.addEventListener("click", openForm);
 crossBtn.addEventListener("click", openForm);

@@ -1,0 +1,16 @@
+.sale {
+    background-color: $header-bcg-color;
+    &__container {
+        padding: 55px 30px;
+        @include flex(flex, column, nowrap, center, space-between);
+    }
+
+    &__title {
+        @include font(24px, $main-text-color, 500, 1.8, left, 1.5px);
+    }
+
+    &__text {
+        @include font(16px, $main-text-color, 500, 1.8, left, 1.5px);
+        margin-bottom: 30px;
+    }
+}

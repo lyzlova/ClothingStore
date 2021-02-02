@@ -30,7 +30,8 @@ p {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s;
 }
 
 ol,
@@ -44,28 +45,37 @@ a {
   color: inherit;
 }
 
-a:active,
-a:focus {
-  outline: none;
+a:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
 }
 
 input,
 textarea {
   outline: none;
 }
+
 input:active,
 textarea:active {
   outline: none;
 }
+
 :focus {
   outline: none;
 }
-textarea {
-  resize: none;
+
+.btn {
+  display: block;
+  background-color: inherit;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
 }
-textarea {
-  resize: vertical;
-}
-textarea {
-  resize: horizontal;
+
+.btn--active {
+  background-color: $second-text-color;
+  cursor: pointer;
+  border: 2px solid $second-text-color;
+  padding: 16px;
+  @include font(11px, $main-text-color, 700, 1, center, 1px, uppercase);
 }

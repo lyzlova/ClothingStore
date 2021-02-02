@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header id="home" class="header">
+      <div class="container header__container">
+        <nav data-menu class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link border-animation" href="/index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link border-animation" href="/cart.html">Shop</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link border-animation nav__link--current" href="#"
+                >Elements</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link border-animation" href="#">Blog</a>ћ
+            </li>
+            <li class="nav__item">
+              <a class="nav__link border-animation" href="#">Page</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="logo header__logo" href="">
+          Clothing <br />
+          Store</a
+        >
+        <button
+          class="burger"
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+        >
+          <svg class="burger__icon-burger" width="40" height="40">
+            <use href="../images/icon/symbol-defs.svg#icon-menu"></use>
+          </svg>
+          <svg class="burger__icon-cross" width="40" height="40">
+            <use href="../images/icon/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <ul class="shop-nav header__shop-nav">
+          <li class="shop-nav__item">
+            <form action="#" class="shop-nav__search-form search-form">
+              <!-- <button
+                class="search-form__btn btn-reset"
+                aria-label="Find"
+              ></button> -->
+              <svg class="burger__icon-burger" width="16" height="16">
+                <use href="../images/icon/symbol-defs.svg#icon-icon"></use>
+              </svg>
+            </form>
+          </li>
+          <li class="shop-nav__item">
+            <a href="#" class="shop-nav__link">
+              <svg
+                class="shop-nav__icon icon-avatar"
+                data-user
+                width="16"
+                height="16"
+              >
+                <use href="../images/icon/symbol-defs.svg#icon-avatar"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="shop-nav__item cart">
+            <a href="#" class="shop-nav__link">
+              <svg class="shop-nav__icon icon-bag" width="16" height="16">
+                <use href="../images/icon/symbol-defs.svg#icon-bag"></use>
+              </svg>
+            </a>
+            <span class="cart__quantity quantity">3</span>
+          </li>
+          <div class="registration">
+            <button class="registration__btn" type="button" data-menu-button>
+              <svg class="registration__btn-cross" width="20" height="20">
+                <use href="../images/icon/symbol-defs.svg#icon-cross"></use>
+              </svg>
+            </button>
+
+            <form class="form-signin form-nav">
+              <h2 class="form-nav__title">Sign in</h2>
+              <div class="form-nav__content">
+                <input
+                  type="text"
+                  class="form-signin__email form-nav__input"
+                  name="usernames"
+                  placeholder="Enter login"
+                  required
+                  autocomplete="off"
+                  value=""
+                />
+                <input
+                  type="password"
+                  class="form-signin__password form-nav__input"
+                  name="password"
+                  placeholder="Enter password"
+                  required
+                  autocomplete="off"
+                  value=""
+                />
+
+                <button type="submit" class="form-nav__btn form-signin--btn">
+                  Enter
+                </button>
+              </div>
+            </form>
+            <form class="form-login form-nav">
+              <h2 class="form-nav__title">Log in</h2>
+              <div class="form-nav__content">
+                <input
+                  type="text"
+                  class="form-login__email form-nav__input"
+                  name="usernames"
+                  placeholder="Enter login"
+                  required
+                  autofocus=""
+                  autocomplete="off"
+                  value=""
+                />
+                <input
+                  type="password"
+                  class="form-login__password form-nav__input"
+                  name="password"
+                  placeholder="Enter password"
+                  required
+                  autocomplete="off"
+                  value=""
+                />
+
+                <button type="submit" class="form-nav__btn form-login--btn">
+                  Enter
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- <div class="cart">
+            <h2 class="cart__title">Cart</h2>
+            <ul class="cart__list"></ul>
+          </div> -->
+        </ul>
+      </div>
+    </header>
+    <main></main>
+  </body>
+</html>

@@ -1,39 +1,61 @@
-.form {
-  @include flex(flex, row, false, stretch, center);
-  height: 60px;
-  margin-bottom: 60px;
-  border: 1px solid $tab-text-color;
+.form-contact {
+  display: none;
+  position: fixed;
+  padding: 20px 30px;
+  top: 66px;
+  right: 50%;
+  transform: translate(50%, 0);
+  background-color: $header-bcg-color;
+  z-index: 14;
+  &.is-open {
+    @include flex(flex, column, false, center, space-evenly);
+  }
 
-  &__input {
-    padding: 19px 30px;
+  &__content {
+    width: 400px;
+    @include flex(flex, column, false, center, center);
+  }
+
+  &__title {
     margin-bottom: 20px;
-    border: none;
-    border-right: 1px solid $tab-text-color;
-    background-color: inherit;
-    outline: none;
-    @include font(16px, $tab-text-color, 300, 1, left, 6.16px);
+    @include font(18px, $main-text-color, 500, 1.8, center, 1.5px, uppercase);
   }
 
   &__btn {
-    padding: 20px 30px;
+    margin-left: auto;
     border: none;
     background-color: inherit;
   }
 
-  &__icon {
-    height: 16px;
-    width: 25px;
+  &__submit {
+    padding: 20px 30px;
   }
 
   input::placeholder {
-    @include font(16px, $tab-text-color, 300, 1, left);
+    @include font(16px, $main-text-color, 300, 1, left);
   }
 
   input:-webkit-autofill,
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
   input:-webkit-autofill:active {
-    @include font(18px, $tab-text-color, 400, 2.222, left);
-    box-shadow: 0 0 0px 1000px $tab-text-color inset !important;
+    @include font(18px, $main-text-color, 400, 2.222, left);
+    box-shadow: 0 0 0px 1000px $header-bcg-color inset !important;
+  }
+}
+
+.input-content {
+  @include flex(flex, row, false, center, center);
+  width: 100%;
+  &__input {
+    width: 66%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid $main-text-color;
+    background-color: inherit;
+    outline: none;
+    @include font(16px, $main-text-color, 300, 1, left, 1);
+    margin-bottom: 20px;
   }
 }

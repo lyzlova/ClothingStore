@@ -1,8 +1,15 @@
 import "./js/swiper.js";
-import "./js/products.js";
-// import "./js/cart.js";
-// import "./js/login.js";
+import "./js/map.js";
 import "./scss/styles.scss";
+import "./js/login.js";
+import "./js/products.js";
+import "./js/newCollection.js";
+import "./js/catalog.js";
+import "./js/filter.js";
+import "./js/contact-us.js";
+import "./js/sortProducts.js";
+import "./js/catalogColumns.js";
+import "./js/sortProductsByPrice.js";
 
 const buttonMenu = document.querySelector("[data-menu-button]");
 const burgerMenu = document.querySelector("[data-menu]");

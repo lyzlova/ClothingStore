@@ -1,0 +1,38 @@
+.breadcrumbs {
+  &__list {
+    @include flex(flex, row, wrap, center, center);
+    border-bottom: 1px solid $breadcrumbs-border-color;
+    padding: 36px 0 26px;
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 35px;
+
+      &::after {
+        content: "/";
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        font-size: 10px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__link {
+    @include font(10px, $link-color, 400, 1, center, 1.2px, uppercase);
+    transition: color 0.3s;
+
+    &--current {
+      color: $main-text-color;
+    }
+  }
+}
+
+.breadcrumbs .card-prev,
+.breadcrumbs .card-next {
+  display: none;
+}

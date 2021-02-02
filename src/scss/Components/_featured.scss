@@ -41,7 +41,9 @@
   @include background(no-repeat, center, cover);
   background-color: $featured-article-bcg-color;
 
-  &__img {
+  &__image{
+    position: relative;
+    overflow: hidden;
     width: 34%;
   }
 
@@ -52,9 +54,6 @@
   &__title {
     margin-bottom: 20px;
     @include font(24px, $main-text-color, 500, 1, left, 1.5px);
-    @media screen and (min-width: 1024px) {
-      @include font(24px, $main-text-color, 500, 1.2, left, 1px);
-    }
   }
 
   &__link {

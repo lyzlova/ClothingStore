@@ -1,0 +1,24 @@
+.about {
+  background-color: $featured-article-bcg-color;
+  &__container {
+    padding: 55px 30px;
+    @include flex(flex, row, nowrap, center, space-between);
+  }
+
+  &__img {
+    flex-basis: 33%;
+  }
+}
+.info {
+  @include flex(flex, column, nowrap, flex-start, space-between);
+  flex-basis: 60%;
+
+  &__title {
+    @include font(24px, $main-text-color, 500, 1.8, left, 1.5px);
+  }
+
+  &__text {
+    @include font(16px, $main-text-color, 500, 1.8, left, 1.5px);
+    margin-bottom: 30px;
+  }
+}

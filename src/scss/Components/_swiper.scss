@@ -1,4 +1,5 @@
 .banner-slider {
+  max-width: 1200px;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -11,7 +12,7 @@
 .banner-pag,
 .hero-pag {
   left: 50%;
-  bottom: 46px;
+  bottom: 30px;
   transform: translateX(-50%);
 
   .swiper-pagination-bullet {
